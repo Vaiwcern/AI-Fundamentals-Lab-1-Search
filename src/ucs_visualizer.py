@@ -196,7 +196,7 @@ def draw_path(path):
 
 # ---------------------------------
 
-def main(maze_path):
+def USC(maze_path):
     maze_data, gift_data, num_row, num_col = load_maze(maze_path)
 
     # --- CALL GRAPH FUNCTION HERE ---
@@ -215,8 +215,11 @@ def main(maze_path):
                 run = False
     pygame.quit()
 
-if len(sys.argv) != 2:
-    print("Usage: python ucs_visualizer.py <path>")
-else:
-    maze_path = sys.argv[1]
-    main(maze_path)
+# def main(maze_path):
+#     USC(maze_path)
+#
+# if len(sys.argv) != 2:
+#     print("Usage: python ucs_visualizer.py <path>")
+# else:
+#     maze_path = sys.argv[1]
+#     main(maze_path)

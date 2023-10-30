@@ -212,7 +212,7 @@ def GBFS(grid, num_row, num_col):
 
 # ---------------------------------
 
-def main(maze_path):
+def GBFS_heuristic_1(maze_path):
     maze_data, gift_data, rows, cols = load_maze(maze_path)
 
     # --- CALL GRAPH FUNCTION HERE ---
@@ -234,8 +234,11 @@ def main(maze_path):
                 run = False
     pygame.quit()
 
-if len(sys.argv) != 2:
-    print("Usage: python GBFS_heuristic1_visualizer.py <path>")
-else:
-    maze_path = sys.argv[1]
-    main(maze_path)
+# def main(maze_path):
+#     GBFS_heuristic_1(maze_path)
+#
+# if len(sys.argv) != 2:
+#     print("Usage: python GBFS_heuristic1_visualizer.py <path>")
+# else:
+#     maze_path = sys.argv[1]
+#     main(maze_path)

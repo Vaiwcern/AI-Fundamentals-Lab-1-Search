@@ -241,12 +241,12 @@ def draw_path(path, start=None, gifts=None, stops=None, tele_in=None, tele_out=N
 
 # ---------------------------------
 
-def main(maze_path):
+def AStarGreedy(maze_path):
     maze_data, gift_datas, rows, cols = load_maze(maze_path)
 
     sumGifts = 0
     for i in gift_datas:
-        sumGifts+=i[2]
+        sumGifts += i[2]
     # --- CALL GRAPH FUNCTION HERE ---
     # Ex: DFS(maze_data, gift_data, rows, cols)
     gifts_sort = sorted(gift_datas, key=lambda point: point[2])
@@ -265,7 +265,6 @@ def main(maze_path):
 
     writeToFile(file_name=generate_output_path(maze_path, "astar-greedy.txt"), path=path, bonus=sumGifts)
 
-
     # --------------------------------
 
     clock = pygame.time.Clock()
@@ -276,10 +275,11 @@ def main(maze_path):
             if event.type == pygame.QUIT:
                 run = False
     pygame.quit()
-
-
-if len(sys.argv) != 2:
-    print("Usage: python bfs_visualizer.py <path>")
-else:
-    maze_path = sys.argv[1]
-    main(maze_path)
+# def main(maze_path):
+#     AStarGreedy(maze_path)
+#
+# if len(sys.argv) != 2:
+#     print("Usage: python bfs_visualizer.py <path>")
+# else:
+#     maze_path = sys.argv[1]
+#     main(maze_path)

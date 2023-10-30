@@ -177,8 +177,7 @@ def draw_path(path):
         draw_cell(x, y, PATH_IMG)
     draw_cell(end[0], end[1], DOOR_OPEN)
 # ---------------------------------
-
-def main(maze_path):
+def BFS(maze_path):
     maze_data, gift_data, rows, cols = load_maze(maze_path)
 
     # --- CALL GRAPH FUNCTION HERE ---
@@ -201,8 +200,11 @@ def main(maze_path):
                 run = False
     pygame.quit()
 
-if len(sys.argv) != 2:
-    print("Usage: python bfs_visualizer.py <path>")
-else:
-    maze_path = sys.argv[1]
-    main(maze_path)
+# def main(maze_path):
+#     BFS(maze_path)
+#
+# if len(sys.argv) != 2:
+#     print("Usage: python bfs_visualizer.py <path>")
+# else:
+#     maze_path = sys.argv[1]
+#     main(maze_path)
