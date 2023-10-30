@@ -221,14 +221,6 @@ def AStar_heuristic_1(maze_path):
     writeToFile(cost_file, path)
 
     # --------------------------------
-
-    clock = pygame.time.Clock()
-    run = True
-    #while run:
-    clock.tick(FPS)
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            run = False
     pygame.quit()
 # def main(maze_path):
 #     AStar_heuristic_1(maze_path)

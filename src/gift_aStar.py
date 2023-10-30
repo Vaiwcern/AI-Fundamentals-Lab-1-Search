@@ -266,14 +266,6 @@ def AStarGreedy(maze_path):
     writeToFile(file_name=generate_output_path(maze_path, "astar-greedy.txt"), path=path, bonus=sumGifts)
 
     # --------------------------------
-
-    clock = pygame.time.Clock()
-    run = True
-    #while run:
-    clock.tick(FPS)
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            run = False
     pygame.quit()
 # def main(maze_path):
 #     AStarGreedy(maze_path)
