@@ -8,7 +8,7 @@ from WriteOutput import *
 # GAME SETUP
 WIDTH, HEIGHT = 1200, 700
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("A*")
+pygame.display.set_caption("GIFT: A* - Greedy")
 FPS = 60
 delay = 20
 long_delay = 1000
@@ -269,11 +269,11 @@ def AStarGreedy(maze_path):
 
     clock = pygame.time.Clock()
     run = True
-    while run:
-        clock.tick(FPS)
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                run = False
+    #while run:
+    clock.tick(FPS)
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run = False
     pygame.quit()
 # def main(maze_path):
 #     AStarGreedy(maze_path)
