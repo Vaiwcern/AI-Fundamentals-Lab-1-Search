@@ -11,9 +11,9 @@
     - 21 IT Honors 
     (21 Cử nhân Tài năng CNTT)
 * **Author**: 
-    - Tan
-    - Hieu
-    - Hoang
+    - Nguyễn Phúc Tân
+    - Nguyễn Trọng Hiếu
+    - Tạ Công Hoàng
 
 ## How to run
 ### Run  all by bash
@@ -70,5 +70,5 @@ xxxxxxxxxxxxxxxxxxxxxx
 
 ![output eg image](Assets/eg-input-output/level_1-output1-bfs.jpg)
 
-## For more information: 
-* Contact via: hieunt.wk@gmail.com
+## Demo
+- Youtube video: https://youtu.be/sQ6hg4P4AWQ
